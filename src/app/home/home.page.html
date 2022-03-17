@@ -1,0 +1,175 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Home</ion-title>
+    <!-- Menu Icon -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- POSITION YOUR COMPONENTS -->
+  <ion-card>
+    <ion-card-content>
+      <div class="ion-text-center">
+        <ion-card-title>Center Any Component</ion-card-title>
+        <ion-button color="primary" routerLink="/page-name"
+          >Go To Page</ion-button
+        >
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- GRID COMPONENT -->
+  <ion-card>
+    <ion-grid>
+      <ion-row class="ion-text-center">
+        <ion-col size="4" routerLink="/home">
+          <ion-icon name="home" color="danger" size="large"></ion-icon>
+          <p>Home</p>
+        </ion-col>
+        <ion-col size="4" routerLink="/about">
+          <ion-icon name="bag-add" color="danger" size="large"></ion-icon>
+          <p>About</p>
+        </ion-col>
+        <ion-col size="4" routerLink="/contact">
+          <ion-icon name="chatbox" color="danger" size="large"></ion-icon>
+          <p>Contact</p>
+        </ion-col>
+      </ion-row>
+
+      <!-- HORIZONTAL LINE -->
+      <div
+        style="width: 100%; border-top: 1px solid #d4d4d4; margin: 8px 0"
+      ></div>
+      <!-- HORIZONTAL LINE END -->
+      <ion-row class="ion-text-center">
+        <ion-col size="4" routerLink="/home">
+          <ion-icon name="home" color="danger" size="large"></ion-icon>
+          <p>Home</p>
+        </ion-col>
+        <ion-col size="4" routerLink="/about">
+          <ion-icon name="bag-add" color="danger" size="large"></ion-icon>
+          <p>About</p>
+        </ion-col>
+        <ion-col size="4" routerLink="/contact">
+          <ion-icon name="thumbs-up" color="danger" size="large"></ion-icon>
+          <p>Learn More</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card>
+
+  <!-- LIST MENU COMPONENT -->
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item routerLink="/about">
+          <ion-icon slot="start" name="man" color="danger"></ion-icon>
+          <ion-label>About Us</ion-label>
+        </ion-item>
+        <ion-item routerLink="/contact">
+          <ion-icon slot="start" name="book" color="danger"></ion-icon>
+          <ion-label>Contact Us</ion-label>
+        </ion-item>
+        <ion-item routerLink="/page3">
+          <ion-icon slot="start" name="heart" color="danger"></ion-icon>
+          <ion-label>Menu Three</ion-label>
+        </ion-item>
+        <ion-item routerLink="/page3">
+          <ion-icon slot="start" name="thumbs-up" color="danger"></ion-icon>
+          <ion-label>Menu Three</ion-label>
+        </ion-item>
+        <ion-item routerLink="/page3">
+          <ion-icon slot="start" name="home" color="danger"></ion-icon>
+          <ion-label>Menu Three</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- LIST COMPONENT -->
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item>
+          <ion-card-title>List title here</ion-card-title>
+        </ion-item>
+        <ion-item>
+          <ion-label>Item One</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Item Two</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Item Three</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-label>Item Four</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- EXTERNAL LINK -->
+  <ion-card>
+    <ion-card-content>
+      <a href="https://amazon.com">Open Amazon</a>
+    </ion-card-content>
+  </ion-card>
+  <br />
+
+  <!-- VIDEO COMPONENT -->
+  <ion-card>
+    <ion-card-content>
+      <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/q_gx3KrF8cU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- AUDIO COMPONENT -->
+  <ion-card color="dark">
+    <ion-card-header>
+      <ion-card-title>Audio</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      <audio src="/assets/audio/lagumu.mp3" controls></audio>
+    </ion-card-content>
+  </ion-card>
+  <br /><br />
+
+  <!-- CARD, TEXT, BUTTON, AND IMAGE COMPONENT -->
+  <ion-card style="box-shadow: none">
+    <ion-card-header>
+      <ion-card-title>Welcome to My App</ion-card-title>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <div
+        style="width: 100%; border-top: 1px solid #d4d4d4; margin: 8px 0"
+      ></div>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-icon name="thumbs-up" size="large" color="danger"></ion-icon>
+      <p>
+        This is come text content. Lorem, ipsum dolor sit amet consectetur
+        adipisicing elit. <br /><br />Ab cumque nemo facere id aut ut
+        perferendis alias dolorum tenetur quo!
+      </p>
+      <ion-img src="/assets/img/2.jpeg"></ion-img>
+      <br />
+      <ion-button color="primary" routerLink="/about" expand="block"
+        >Go To Page</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+</ion-content>
